@@ -8,6 +8,9 @@ You are tasked with writing the control software for the new Titan Space Helicop
 
 The world is harsh and has huge pillars of stone that are to large to fly over.
 
+* [Example fields](fields/)
+* [User-contributed code](solutions/)
+
 ---
 
 ## Part 1 ##
