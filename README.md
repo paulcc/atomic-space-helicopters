@@ -26,10 +26,35 @@ If the copter encounters an obstacle, it stops and returns an error to the contr
 ## Part 2 ##
 
 Having the heli controlled by a human on earth is to slow.
-We need you to implement the A* path finding algorithm to find a path from a start co-ordinate to an end co-ordinate.
+We need you to implement the [A* path finding algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) to find a path from a start co-ordinate to an end co-ordinate (eg. top-left to bottom-right).
 
-
-![inline](Screenshot 2019-09-10 at 17.19.04.png)
+```
+X X # . # . # . # . . . . . . # . # . . . . . # . 
+c X X # . . . . . . . # # . # . # . # . . . . . # 
+c c X X X X X X X c # . . # . . . # . . . # # # . 
+c # c c c . # . X X X c # # # . . . . . . . . . # 
+c c c # c c c c . c X # # . . . # . . . # . # . . 
+# c c . c c # c # # X X # . . # . . . . . # . . . 
+# c # . c c c c # . # X c c c # . . # . . . . . . 
+# . # . # # # c c c # X c # # . . . . # . # . . . 
+. . # . . . . . c # . X # . . . . . . . # . . . . 
+. . # . . # . # # . # X X c c c c c # . . . . # . 
+. # . . . . . # # . . c X # # # # c # . . # . . # 
+. . . . . . . # . . . # X . . # # # . . . # . . . 
+# . . . . # . # # . . . X X X # . . . . # . . . # 
+# # . # # # # . . . . . c # X X X X X . . . # # . 
+. . . . . . # # . . . . . # c c . # X c c c c . # 
+. # . . . . # . # . # . # . # # . # X . c c . . # 
+. . . # . # # . . . # . . # # . . # X X c # . # . 
+. # . # . . . . . # . . # . # # # # . X c # . . # 
+# . . . . . . . . . . . . . # . . . . X c . . . # 
+. # . # . # . # # # . . . # . . . # . X c # . # . 
+. . . . # . . . . . # . # . . # . . . X # . . . . 
+. . . # . . # . . . . . # # . . . . # X X X . . . 
+# . . . . . . . # . . . # . . . . . . . . X . # # 
+. # . . # . . # # # . . # . # # . # . # . X X X X 
+. . . . . . . . # . . . # . . . # # . . . # . # X
+```
 
 ---
 
