@@ -8,10 +8,11 @@ Do:
 ```bash
 sbt run
 ```
-to build and run with the default field (`field1.json`). To run with another field, just pass in its name as an argument. eg.
+from *this* directory to build and run with the default field (`field1.json`). To run with another field, just pass in its name as an argument. eg.
 ```bash
 sbt "run maze.json"
 ```
+Note the positioning of the double quotes.
 
 There is a reasonably generic a-star algorithm implementation in [a-star.scala](src/main/scala/a-star.scala). It is a pure functional translation of the pseudo-code given on the [A-star algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) wikipedia page, making extensive use of Scala's standard library immutable collections.
 
